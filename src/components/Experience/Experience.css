@@ -1,0 +1,60 @@
+.experience-container{
+    margin: 4rem 0;
+    position: relative;
+}
+
+.experience-container h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+
+.arrow-left,
+.arrow-right{
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid orange;
+    border-radius: 0.7rem;
+    background: rgb(54, 37, 6);;
+    position: absolute;
+    z-index: 3;
+    top:55%;
+    cursor: pointer;
+}
+
+.arrow-left{
+    left: -2rem;
+}
+
+.arrow-right{
+    right: -2rem;
+}
+
+@media (max-width: 1025px){
+    .arrow-left{
+        left:0rem;
+    }
+
+    .arrow-right{
+        right:0rem;
+    }
+}
+
+@media (max-width: 768px){
+    .experience-container h5{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .arrow-left{
+        left: -0.2rem;
+    }
+
+    .arrow-right{
+        right: -0.2rem;
+    }
+}

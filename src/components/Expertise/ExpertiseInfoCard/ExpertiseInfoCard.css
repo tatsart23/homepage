@@ -1,0 +1,89 @@
+.expert-info-card{
+    min-height: 20rem;
+    width: 100%;
+    border-radius: 0.65rem;
+    border: 1px solid orange;
+    background: linear-gradient(180deg, rgba(206, 138, 11, 0.74) 0%, rgba(54, 37, 6, 0.698) 100%);
+    backdrop-filter: blur(1rem);
+}
+
+.expert-info-card img{
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.expert-info-card h6{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem 2rem;
+    background: rgb(0, 0, 0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1.5px solid orange;
+}
+
+.expertise-info-content{
+    padding: 2rem;
+}
+
+.expertise-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.expertise-info p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.expertise-info .percentage{
+    color: orange;
+}
+
+.expertise-progress-bg{
+    width: 100%;
+    height: 0.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.expertise-progress{
+    width: 80%;
+    height: 100%;
+    background: orange;
+    border-radius: 0.5rem;
+    transition: width 1s ease;
+}
+
+
+@media (max-width: 1025px){
+    .expert-info-card h6{
+        font-size: 1.5rem;
+    }
+
+    .expertise-info p {
+        font-size: 0.9rem;
+    }
+    
+    .expertise-info-content{
+        padding:1.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .expert-info-card{
+        width:95%;
+    }
+    
+    .exper-card{
+        width: 90%;
+    }
+}

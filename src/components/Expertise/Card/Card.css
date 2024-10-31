@@ -1,0 +1,83 @@
+.exper-card{
+    border-radius: 0.65rem;
+    border: 1.5px solid orange;
+    padding: 2.5rem;
+    text-align: center;
+    background: rgba(94, 64, 10, 0.398);
+    backdrop-filter: blur(1rem);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+.exper-card:hover,
+.exper-card:active{
+    background: linear-gradient(180deg, rgba(206, 138, 11, 0.74) 0%, rgba(54, 37, 6, 0.698) 100%);
+
+}
+
+.exper-card span{
+    font-size:1.3rem;
+    font-weight:500;
+}
+
+.expertise-icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(170, 116, 15);
+    border: 1.5px solid orange;
+    border-radius: 15%;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+}
+
+.expertise-icon img{
+    width: 2.4rem;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 1025px) {
+    
+    .exper-card{
+        padding: 2rem;
+    }
+
+    .exper-card span{
+        font-size:1rem;
+    }
+
+    .expertise-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .expertise-icon img{
+        width: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .exper-card{
+        padding: 1.5rem;
+    }
+
+    .exper-card span{
+        font-size:0.9rem;
+    }
+
+    .expertise-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .expertise-icon img{
+        width: 1.5rem;
+    }
+}
